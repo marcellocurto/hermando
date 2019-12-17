@@ -1,0 +1,13 @@
+@import "_normalize.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+$fa-font-path: 'icons';
+
+@import "font-aweseome/fontawesome.scss";
+@import "font-aweseome/solid.scss";
+@import "font-aweseome/brands.scss";
+@import "font-aweseome/regular.scss";
+
+@import "_at-media.scss";
