@@ -140,8 +140,7 @@ a {
   left: 0;
   right: 0;
   border-bottom: 2px solid #193e4a;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbf2edf0), to(transparent));
-  background: linear-gradient(0deg, #fbf2edf0, transparent); }
+  background-color: linear-gradient(0deg, #fbf2edf0, transparent); }
 
 .slogan {
   font-size: 30px;
