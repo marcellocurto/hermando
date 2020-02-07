@@ -127,6 +127,9 @@ a {
   text-decoration: none;
   color: #e54f66; }
 
+.text-large a {
+  color: #193e4a; }
+
 .hero {
   min-height: calc(100vh + 2px);
   background-image: url("AdobeStock_217497148_Preview.jpeg");
@@ -192,11 +195,13 @@ a {
   font-size: 40px;
   line-height: 1.2em; }
 
-.hamburger-menu, .close-menu {
+.hamburger-menu,
+.close-menu {
   font-size: 24px;
   cursor: pointer; }
 
-.hamburger-menu:hover, .close-menu:hover {
+.hamburger-menu:hover,
+.close-menu:hover {
   color: #e54f66; }
 
 .background-center {
@@ -247,7 +252,7 @@ a {
   right: 0;
   bottom: 0;
   left: 50vw;
-  background-color: white;
+  background-color: #f2f2f2;
   background-color: #ffffffe0;
   padding: 27px 40px;
   -webkit-box-orient: vertical;
@@ -257,6 +262,18 @@ a {
   line-height: 1em;
   font-size: 30px;
   display: none; }
+
+.post-wrapper {
+  padding: 180px 40px 40px 40px; }
+  .post-wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.2em; }
+  .post-wrapper h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2em; }
 
 /*!
  * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
