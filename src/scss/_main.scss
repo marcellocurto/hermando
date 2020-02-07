@@ -74,6 +74,13 @@ a {
   left: 0;
   width: 100%;
   display: flex;
+  z-index: 900;
+}
+
+.close-menu {
+  position: fixed;
+  top: 27px;
+  right: 40px;
   z-index: 1000;
 }
 
@@ -84,6 +91,11 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .herman-logo {
@@ -100,9 +112,13 @@ a {
   line-height: 1.2em;
 }
 
-.hamburger-menu {
+.hamburger-menu, .close-menu {
   font-size: 24px;
   cursor: pointer;
+}
+
+.hamburger-menu:hover, .close-menu:hover {
+  color: #e54f66;
 }
 
 .background-center {
@@ -135,4 +151,24 @@ a {
 
 .footer {
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50vw;
+  background-color: white;
+  background-color: #ffffffe0;
+  padding: 27px 40px;
+  flex-direction: column;
+  border-left: 2px solid #193e4a;
+  line-height: 1em;
+  font-size: 30px;
+  display: none;
 }

@@ -156,6 +156,12 @@ a {
   width: 100%;
   display: -webkit-box;
   display: flex;
+  z-index: 900; }
+
+.close-menu {
+  position: fixed;
+  top: 27px;
+  right: 40px;
   z-index: 1000; }
 
 .menu-wrapper {
@@ -171,6 +177,10 @@ a {
   align-items: center;
   width: 100%; }
 
+.menu-item {
+  margin-bottom: 20px;
+  font-weight: 700; }
+
 .herman-logo {
   font-weight: 700; }
 
@@ -182,9 +192,12 @@ a {
   font-size: 40px;
   line-height: 1.2em; }
 
-.hamburger-menu {
+.hamburger-menu, .close-menu {
   font-size: 24px;
   cursor: pointer; }
+
+.hamburger-menu:hover, .close-menu:hover {
+  color: #e54f66; }
 
 .background-center {
   background-position: center;
@@ -218,7 +231,32 @@ a {
   object-fit: cover; }
 
 .footer {
-  padding: 40px; }
+  padding: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center; }
+
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50vw;
+  background-color: white;
+  background-color: #ffffffe0;
+  padding: 27px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-left: 2px solid #193e4a;
+  line-height: 1em;
+  font-size: 30px;
+  display: none; }
 
 /*!
  * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
