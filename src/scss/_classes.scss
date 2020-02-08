@@ -71,8 +71,8 @@
   width: 80px;
 }
 .width-auto {
-    width: auto;
-  }
+  width: auto;
+}
 .max-width {
   max-width: 1000px;
 }
@@ -182,8 +182,8 @@
 }
 
 .window-height-max {
-    max-height: 100vh;
-  }
+  max-height: 100vh;
+}
 
 .window-height-fix {
   height: 100vh;
@@ -194,9 +194,12 @@
 }
 
 .color-white {
-    color: $white;
-  }
+  color: $white;
+}
 
+.mirror {
+  transform: scaleX(-1);
+}
 .border-top-large {
   border-top: 2px solid $color-primary;
 }
@@ -457,6 +460,14 @@
 
   .hide-mobile-small {
     display: none;
+  }
+
+  .column-mobile {
+    flex-direction: column;
+  }
+
+  .padding-x-large {
+    padding: 40px;
   }
 }
 

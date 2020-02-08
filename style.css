@@ -259,6 +259,10 @@ textarea:focus {
 .color-white {
   color: #f2f2f2; }
 
+.mirror {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
 .border-top-large {
   border-top: 2px solid #193e4a; }
 
@@ -482,7 +486,13 @@ textarea:focus {
   .show-mobile-small {
     display: inherit; }
   .hide-mobile-small {
-    display: none; } }
+    display: none; }
+  .column-mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .padding-x-large {
+    padding: 40px; } }
 
 @media only screen and (min-width: 980px) {
   .show-mobile-small {
@@ -5067,3 +5077,10 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
+
+html,
+body {
+  font-size: 1rem; }
+
+.menu-overlay {
+  left: 0; }
