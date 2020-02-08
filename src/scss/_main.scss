@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
-  color: $blue;
+  color: $color-primary;
   background-color: $white;
   font-size: 14px;
   line-height: 1em;
@@ -41,12 +41,13 @@ p:last-child {
 
 a {
   text-decoration: none;
-  color: $red;
+  color: $color-accent;
 }
 
 .text-large {
+  margin-left: -3px;
   a {
-    color: $blue;
+    color: $color-primary;
   }
 }
 
@@ -63,7 +64,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  border-bottom: 2px solid $blue;
+  border-bottom: 2px solid $color-primary;
   background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0));
 }
 
@@ -71,7 +72,7 @@ a {
   font-size: 30px;
   line-height: 1em;
   text-align: center;
-  color: $blue;
+  color: $color-primary;
 }
 
 .main-navigation {
@@ -109,7 +110,7 @@ a {
 }
 
 .do-logo {
-  color: $red;
+  color: $color-accent;
   margin-left: -20px;
 }
 
@@ -126,7 +127,7 @@ a {
 
 .hamburger-menu:hover,
 .close-menu:hover {
-  color: $red;
+  color: $color-accent;
 }
 
 .background-center {
@@ -158,10 +159,12 @@ a {
 }
 
 .footer {
-  padding: 40px;
+  padding: 27px 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  border-top: 2px solid $color-primary;
+  justify-content: space-between;
 }
 
 .menu-overlay {
@@ -175,7 +178,7 @@ a {
   background-color: #ffffffe0;
   padding: 27px 40px;
   flex-direction: column;
-  border-left: 2px solid $blue;
+  border-left: 2px solid $color-primary;
   line-height: 1em;
   font-size: 30px;
   display: none;

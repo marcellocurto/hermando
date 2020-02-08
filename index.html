@@ -38,9 +38,9 @@
 
     <!-- Menu Overlay -->
     <div class="menu-overlay" id="AccessibleNavOverlay" role="navigation">
-        <div class="menu-item"><a href="http://">Kontakt</a></div>
-        <div class="menu-item"><a href="http://">Impressum</a></div>
-        <div class="menu-item"><a href="http://">Datenschutzerklärung</a></div>
+        <div class="menu-item"><a href="kontakt">Kontakt</a></div>
+        <div class="menu-item"><a href="impressum">Impressum</a></div>
+        <div class="menu-item"><a href="impressum">Datenschutzerklärung</a></div>
         <div class="close-menu" onclick="closeMenu()">
             <i class="far fa-times-circle"></i>
         </div>
@@ -59,68 +59,259 @@
         function closeMenu() {
             navOverlay = document.getElementById('AccessibleNavOverlay');
             navOverlay.style.display = 'none';
- 
+
             hamburgerSymbol = document.getElementById('hamburgerSymbol');
             hamburgerSymbol.style.display = 'block';
         }
     </script>
 
+    <!-- Content -->
     <main class="content">
 
+        <!-- Über uns -->
+        <div class="flex column padding-large">
+            <h1>Über uns</h1>
+            <div class="flex">
+                <div class="flex-one padding-small">
+                    <h1>
+                        Wir bieten Ihnen ein umfangreiches Paket an Leistungen aus denen Sie wählen können.
+                    </h1>
+                    <p>
+                        Hermando Hausmeisterservices kann Ihnen das beste Handwerk, die beste Immobilienbetreuung und
+                        Immobilienpflege anbieten. Im Rahmen unserer Betreuung bieten wir auch in den kalten
+                        Wintermonaten
+                        einen schnell agierenden Winterdienst an.</p>
 
-        <!-- 1 -->
-        <div class="box">
-            <div class="box-item text-box">
-                <h2>
-                    Arbeit
-                </h2>
-                <p>
-                    Viel Arbeit.
-                </p>
+                    <p> Durch unsere 24 Stunden Bereitschaft sind wir jederzeit flexibel für Sie abrufbar.</p>
+
+                    <p> Durch ein erfahrenes und qualifiziertes Fachpersonal in Kombination mit engagierten
+                        Nachwuchskräften
+                        können wir eine hohe Arbeitsqualität gewährleisten. Gerne erstellen wir Ihnen ein auf Ihre
+                        individuelle Bedürfnisse abgestimmtes unverbindliches und kostenloses Angebot.
+                    </p>
+                    <p>
+                        Von Anfang an hat sich Hermando zur Aufgabe gemacht, besonders anspruchsvolle Kunden, mit hohen
+                        Anforderungen zu bedienen. Durch unsere Erfahrung, Leistungsbereitschaft und einem reibungslosem
+                        Kommunikationssystem konnten wir stets dieser Aufgabe gerecht werden.
+
+                        Wir bieten Ihnen einen professionellen Service mit individueller Beratung, kostenlosem
+                        Kostenvoranschlag, Planung, -Lieferung, -Installation und –Entsorgung von Materialien.
+
+                        Wenn Sie Interesse an unserem Dienstleistungen haben, kontaktieren Sie uns ganz unverbindlich.
+                        Wir
+                        erstellen Ihnen ein persönliches Angebot für Ihren Bedarf. Dabei sind wir auf Anfrage auch für
+                        weitere Leistungen rund um Ihr Zuhause offen. Ihre Wünsche und Bedürfnisse stehen bei uns im
+                        Vordergrund.
+                    </p>
+                </div>
+
             </div>
-            <picture class="box-item image-box">
-                <img src="images/hermando-fenster-1200.jpeg" alt="Alttext">
-            </picture>
         </div>
 
-        <!-- 2 -->
-        <div class="box">
-            <div class="box-item text-box">
-                <h2>
-                    Arbeit
-                </h2>
-                <p>
-                    Viel Arbeit.
-                </p>
-            </div>
-            <picture class="box-item image-box">
-                <img src="images/hermando-dach-1200.jpeg" alt="Alttext">
-            </picture>
-        </div>
 
-        <!-- 3 -->
-        <div class="box">
-            <div class="box-item text-box">
-                <h2>
-                    Arbeit
-                </h2>
+        <!-- Unsere Leistungen -->
+        <section class="flex column padding-large">
+            <h1>Unsere Leistungen</h1>
+            <p>Im Folgenden finden Sie eine Auswahl von verschiedenen Leistungen, welche wir anbieten.</p>
+
+            <!-- Hausmeisterdienste -->
+            <div>
+                <h2>Hausmeisterdienste</h2>
                 <p>
-                    Viel Arbeit.
+                    Der Handwerksdienst ist ein besonderes Aufgabenfeld, dass sehr viel Fachkenntnisse,
+                    Fingerspitzengefühl und Geduld verlangt. Unsere Hausmeister kommen alle aus der Bau- und
+                    Handwerksbranche und verfügen dementsprechend über sehr gute Qualifikationen um die beste
+                    Betreuung
+                    Ihrer Immobilie zu gewährleisten.
                 </p>
+                <ul>
+                    <li>Aufsicht und Objektkontrolle</li>
+                    <li>Überwachung der Haustechnik</li>
+                    <li>Überwachung der Ordnung und des einwandfreien Gesamtzustandes der betreuten Anlage</li>
+                    <li>Unterstützung der Hausverwaltung</li>
+                    <li>Kleinreparaturen</li>
+                    <li>Prüfung und Kontrolle der technischen Einrichtungen wie z.B. der Heizungsanlage, der
+                        Wasserstation, der elektronischen Einrichtungen, wie Schalter, Klingelanlagen,
+                        Beleuchtungen, Sicherungen, Türlautsprecher</li>
+                    <li>Wechseln von Glühlampen und Leuchtröhren an der Haus-, Treppenhaus- und Außenbeleuchtung
+                    </li>
+                    <li>Erneuerung von defekten Lampenschalen und Abdeckungen</li>
+                    <li>Korrektur der Schalterstellungen von Beleuchtungseinrichtungen (Automatik/Dauerlicht)</li>
+                    <li>Wartung der Müllanlagen und der Gemeinschaftsräume</li>
+                    <li>Bereitstellung von Mülltonnen für die Müllabfuhr nach Plan</li>
+                    <li>Reinigung und Pflege der Außenanlage</li>
+                    <li>Reinigung von Kellerfluren und Technikräumen</li>
+                    <li>Notdienst (24/7)</li>
+                    <li>Entsorgung von Verpackungskartonagen (Papier, Pappe, Kartonagen und Folien)</li>
+                    <li>Entsorgung von Paletten</li>
+                    <li>Entrümpelung jeglicher Art</li>
+                    <li>Schneeräumung auf Gehwegen und Straßen nach gesetzlichen Vorschriften </li>
+                    <li>Streuen von Salz, Sand oder Splitt zur Gefahrenabwehr von Unfällen durch Eis und
+                        Schneeglätte</li>
+                </ul>
+                <picture class="flex">
+                    <img srcset="images/hermando-fenster-320.jpeg 320w,
+                    images/hermando-fenster-480.jpeg 480w,
+                    images/hermando-fenster-800.jpeg 800w,
+                    images/hermando-fenster-1200.jpeg 1200w,
+                    images/hermando-fenster-1800.jpeg 1800w" src="images/hermando-fenster-800.jpeg" alt="Alttext">
+                </picture>
             </div>
-            <picture class="box-item image-box">
-                <img src="images/hermando-laub-1200.jpeg" alt="Alttext">
+
+            <!-- Außenarbeiten -->
+            <div>
+                <h2>Außenarbeiten</h2>
+                <p>
+                    Eine gepflegte und saubere Grün- und Außenanlage ist das Aushängeschild einer Immobilie und
+                    erzeugt
+                    Vertrauen bei Mietern und Besuchern. Im Rahmen der Garten- und Außenpflege bieten wir Ihnen
+                    umfangreiche Dienstleistungen, damit auch Ihre Immobilie jederzeit einen gepflegten Eindruck
+                    ausstrahlt.
+                </p>
+                <ul>
+                    <li>Regelmäßiges Mähen des Rasens und Beseitigung des Grüngutes</li>
+                    <li>Rasenpflege, Düngung und Rasenmulchen</li>
+                    <li>Wildkrautbeseitigung auf Wegen und KFZ-Stellplätzen</li>
+                    <li>Pflanzungen von Unkraut befreien und Beete aufhacken</li>
+                    <li>Regelmäßiger Hecken-, Strauch und Bodendeckschnitt</li>
+                    <li>Laub aus der Gartenanlage und Gehwegen entfernen</li>
+                    <li>Beseitigung von Herbstlaub </li>
+                </ul>
+                <picture class="flex">
+                    <img srcset="images/hermando-laub-320.jpeg 320w,
+                    images/hermando-laub-480.jpeg 480w,
+                    images/hermando-laub-800.jpeg 800w,
+                    images/hermando-laub-1200.jpeg 1200w,
+                    images/hermando-laub-1800.jpeg 1800w" src="images/hermando-laub-800.jpeg" alt="Alttext">
+                </picture>
+            </div>
+
+            <!-- Sonstige -->
+            <h2>Sonstige</h2>
+            <p>Gewerbliche Einrichtungen wie Büros, Gastronomie, Groß- und Einzelhandel sowie das dort
+                vorhandene
+                Inventar bedürfen regelmäßiger Wartung und Pflege. Auch individuelle Kleinreparaturen der
+                verschiedenen Gewerke bleiben Erfahrungsgemäß nicht dauerhaft aus. Um einen unterbrechungsfreien
+                Betrieb zu gewährleisten, sollte ein kompetenter Partner mit kurzfristigen Zugriffszeiten stets
+                zur
+                Verfügung stehen. Genau diesen Service bieten wir mit Anspruch an höchste Qualität an.</p>
+            <div>
+                <ul>
+                    <li>Montage &amp; Installation technischer Einrichtung</li>
+                    <li>Prüfungs- &amp; Dokumentationsarbeiten</li>
+                    <li>Demontage &amp; Rückbau von Einrichtung</li>
+                    <li>Kontrolle &amp; Wechsel von Leuchtmitteln</li>
+                    <li>Grund- &amp; Unterhaltsreinigung</li>
+                    <li>Besorgungsfahrten</li>
+                    <li>Kleinreparaturen und Notdienst</li>
+                    <li>Dichtigkeitsprüfung &amp; Entkalkung</li>
+                    <li>Schmieren von beweglichen Teilen</li>
+                    <li>Filterkontrolle &amp; Wechsel</li>
+                    <li>Ablesen &amp; Melden von Zählerständen</li>
+                    <li>Öffnen von Türen &amp; Türschlößern</li>
+                    <li>Rauchwarnmeldermontage</li>
+                    <li>Unterstützung Ihres haustechnischen Personals</li>
+                    <li>Kontrollgänge und Verschluss </li>
+                    <li>Renovier- &amp; Malerarbeiten</li>
+                    <li>Entsorgung &amp; Einlagerung</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Zielgruppe -->
+        <section class="padding-large">
+            <div class="flex column">
+                <h1>Zielgruppe</h1>
+                <div class="uagb-separator-wrap">
+                    <div class="uagb-separator"></div>
+                </div>
+                <p>Die Struktur Ihres Betriebes lässt eine wirtschaftliche Beschäftigung eines eigenen
+                    Haustechnikers nicht zu, trotzdem fallen regelmäßig Arbeiten im Bereich der Haustechnik an, welche
+                    bisher nur über verschiedene Dienstleister / Handwerker abgearbeitet werden?
+                </p>
+                <p>Sie wünschen sich einen
+                    Ansprechpartner, welcher Objekt und Aufgaben kennt, sowie eine kurze Vorlaufzeit bei der Behebung
+                    von
+                    Problemen bietet?
+                </p>
+                <p>Gewerbliche Einrichtungen wie Büros, Gastronomie, Groß- und Einzelhandel sowie das dort
+                    vorhandene
+                    Inventar bedürfen regelmäßiger Wartung und Pflege. Auch individuelle Kleinreparaturen der
+                    verschiedenen Gewerke bleiben Erfahrungsgemäß nicht dauerhaft aus. Um einen unterbrechungsfreien
+                    Betrieb zu gewährleisten, sollte ein kompetenter Partner mit kurzfristigen Zugriffszeiten stets
+                    zur
+                    Verfügung stehen. Genau diesen Service bieten wir mit Anspruch an höchste Qualität an.</p>
+            </div>
+            <ul>
+                <li>Groß- / Einzelhandel</li>
+                <li>Hotellerie / Gastronomie</li>
+                <li>Büros / Kanzleien</li>
+                <li>Dienstleister / Handwerk</li>
+                <li>Tankstellen / Raststätten</li>
+            </ul>
+            <picture class="padding-small">
+                <img srcset="images/hermando-dach-320.jpeg 320w,
+                images/hermando-dach-480.jpeg 480w,
+                images/hermando-dach-800.jpeg 800w,
+                images/hermando-dach-1200.jpeg 1200w,
+                images/hermando-dach-1800.jpeg 1800w" src="images/hermando-dach-800.jpeg"
+                    alt="Hermando prüft eine Klimaanlage auf dem Dach eines Kunden">
             </picture>
-        </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="flex column padding-large">
+            <h1>Kontakt</h1>
+
+            <h2>Sind Sie bereit für einen zuverlässigen Partner?</h2>
+
+            <p>Nehmen Sie noch heute Kontakt mit uns auf, um die Aufgaben und
+                Tätigkeitsfelder zu besprechen!</p>
+
+            <p>Mit unserer umfangreichen Erfahrung können wir Sie gerne unverbindlich
+                und kostenfrei beraten.</p>
+
+            <p> Wir können uns immer nach Ihrem Bedarf anpassen und Ihnen ein
+                individuell, nach Ihren Vorstellungen maßgeschneidertes Angebot unterbreiten.</p>
+
+            <address class=" flex-one padding-bottom-medium">
+                <p>Hermando</p>
+                <p>Elisabethstr. 7</p>
+                <p>80796 München</p>
+                <p><i class="fas fa-phone"></i> 089 44130199</p>
+                <p><a href="mailto:office@hermando.de">office@hermando.de</a></p>
+                <p><a href="https://hermando.de/">www.hermando.de</a></p>
+            </address>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <nav class="footer-links">
-            <a href="impressum.html">Impressum / Datenschutzerklärung</a>
-        </nav>
+    <footer class="flex column padding-large border-top-large">
 
-        <span class="copyright">© 2020 Roark OHG</span>
+        <div class="flex-one">
+            <p>
+                <a href="/" id="footer-start">Start</a>
+            </p>
+
+            <p>
+                <a href="/ueber-uns/" id="footer-ueber">Über uns</a>
+            </p>
+
+            <p>
+                <a href="/leistungen/" id="footer-leistungen">Leistungen</a>
+            </p>
+
+
+            <p>
+                <a href="/kontakt/" id="footer-kontakt">Kontakt</a>
+            </p>
+
+        </div>
+        <nav class="footer-links">
+            <a href="impressum">Impressum / Datenschutzerklärung</a>
+        </nav>
+        <span class="copyright">© 2020 Hermando (Roark OHG)</span>
     </footer>
 </body>
 
