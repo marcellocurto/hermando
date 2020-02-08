@@ -5,6 +5,12 @@ let autoprefixer = require('gulp-autoprefixer');
 
 let concat = require('gulp-concat');
 
+const imageResize = require('gulp-image-resize');
+const imageminMozjpeg = require("imagemin-mozjpeg");
+const imagemin = require("gulp-imagemin");
+
+const rename = require("gulp-rename");
+
 let dist = './';
 let styleSRC = './src/scss/style.scss';
 let scriptPath = './src/js/';
@@ -13,6 +19,8 @@ let scriptSRC = [
 ];
 let styleWatch = './src/scss/**/*.scss';
 let scriptWatch = './src/js/**/*.js';
+
+let imageSource = './src/images/**/*.jpeg';
 
 function css(cb) {
   gulp.src(styleSRC)
@@ -34,6 +42,55 @@ function javascript(cb) {
   cb();
 };
 
+function images(cb) {
+  gulp.src('AdobeStock_139564435_Preview.jpeg')
+    .pipe(imageResize({
+      width : 100,
+      height : 100,
+      crop : true,
+      upscale : false
+    }))
+    .pipe(gulp.dest(dist));
+  cb();
+};
+
+gulp.task("img", () => {
+  const sizes = [
+    { width: 320, quality: 78, suffix: "small" },
+    { width: 480, quality: 78, suffix: "medium" },
+    { width: 800, quality: 78, suffix: "large" },
+    { width: 1200, quality: 78, suffix: "x-large" },
+    { width: 1800, quality: 78, suffix: "xx-large" },
+    { width: 2400, quality: 78, suffix: "xxx-large" }
+  ]
+  let stream
+  sizes.forEach(size => {
+    stream = gulp
+      .src(imageSource)
+      .pipe(imageResize({ width: size.width }))
+      .pipe(
+        rename(path => {
+          path.basename += `-${size.width}`
+        })
+      )
+      .pipe(
+        imagemin(
+          [
+            imageminMozjpeg({
+              quality: size.quality,
+            }),
+          ],
+          {
+            verbose: true,
+          }
+        )
+      )
+      .pipe(gulp.dest(dist + 'images/'))
+  })
+  return stream
+})
+
+
 function watch(cb) {
   gulp.watch(styleWatch, css);
   gulp.watch(scriptWatch, javascript);
@@ -42,7 +99,8 @@ function watch(cb) {
 
 exports.css = css;
 exports.javascript = javascript;
+exports.images = images;
 exports.watch = watch;
 
-let build = gulp.parallel([watch, css, javascript]);
+let build = gulp.parallel([watch, css, javascript, images]);
 gulp.task('default', build);
