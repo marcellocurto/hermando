@@ -1,9 +1,11 @@
 $color-primary: #193e4a;
 $color-accent: #e54f66;
+$color-tertiary: #607d8b;
 $white: #f2f2f2;
 
 @import "_normalize.scss";
 @import "_classes.scss";
+@import "_basic.scss";
 @import "_header.scss";
 @import "_main.scss";
 @import "_footer.scss";

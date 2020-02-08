@@ -1,0 +1,106 @@
+.text-large {
+  margin-left: -3px;
+  a {
+    color: $color-primary;
+  }
+}
+
+.hero {
+  background-image: url("images/hermando-at-work-1800.jpeg");
+}
+
+.small-hero {
+  background-color: #f0f0f0f0;
+  padding: 27px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid $color-primary;
+  background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0));
+}
+
+.small-hero-alt {
+  background-color: #f0f0f0f0;
+  padding: 27px 40px;
+  border-bottom: 2px solid $color-primary;
+  background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0));
+}
+
+.slogan {
+  font-size: 30px;
+  line-height: 1em;
+  text-align: center;
+  color: $color-primary;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+.close-menu {
+  position: fixed;
+  top: 27px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.menu-wrapper {
+  padding: 20px 40px;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.herman-logo {
+  font-weight: 700;
+}
+
+.do-logo {
+  color: $color-accent;
+  margin-left: -20px;
+}
+
+.text-large {
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.hamburger-menu,
+.close-menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hamburger-menu:hover,
+.close-menu:hover {
+  color: $color-accent;
+}
+
+.background-center {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50vw;
+  background-color: $white;
+  padding: 27px 40px;
+  flex-direction: column;
+  border-left: 2px solid $color-primary;
+  line-height: 1em;
+  font-size: 30px;
+  display: none;
+}

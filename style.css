@@ -88,14 +88,9 @@ select:focus,
 textarea:focus {
   outline: none; }
 
-.font-normal {
-  font-family: nobel, sans-serif;
+.font-handwriting {
+  font-family: timberline, sans-serif;
   font-weight: 400;
-  font-style: normal; }
-
-.font-bold-condensed {
-  font-family: nobel-condensed, sans-serif;
-  font-weight: 700;
   font-style: normal; }
 
 .font-size-x-large {
@@ -103,7 +98,7 @@ textarea:focus {
   line-height: 1em; }
 
 .font-size-large {
-  font-size: 38px;
+  font-size: 1.9rem;
   line-height: 1em; }
 
 .font-size-medium {
@@ -131,6 +126,12 @@ textarea:focus {
 .height-50 {
   height: 50%; }
 
+.height-fixed-large {
+  height: 330px; }
+
+.height-fixed-medium {
+  height: 250px; }
+
 .width-100 {
   width: 100%; }
 
@@ -140,17 +141,23 @@ textarea:focus {
 .width-50 {
   width: 50%; }
 
+.width-fixed-medium {
+  width: 250px; }
+
 .width-fixed-small {
   width: 160px; }
 
 .width-fixed-x-small {
   width: 80px; }
 
+.width-auto {
+  width: auto; }
+
 .max-width {
   max-width: 1000px; }
 
 .max-width-small {
-  max-width: 450px; }
+  max-width: 550px; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -166,6 +173,12 @@ textarea:focus {
 
 .font-weight-normal {
   font-weight: 400; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
+.non-italic {
+  font-style: normal; }
 
 .italic {
   font-style: italic; }
@@ -228,8 +241,14 @@ textarea:focus {
 .line-bottom {
   border-bottom: 1px solid #193e4a; }
 
+.background-color-dark {
+  background-color: #607d8b; }
+
 .window-height {
   min-height: 100vh; }
+
+.window-height-max {
+  max-height: 100vh; }
 
 .window-height-fix {
   height: 100vh; }
@@ -242,6 +261,9 @@ textarea:focus {
 
 .border-bottom-large {
   border-bottom: 2px solid #193e4a; }
+
+.border-top-small {
+  border-top: 1px solid #193e4a; }
 
 .border-bottom-small {
   border-bottom: 1px solid #193e4a; }
@@ -257,6 +279,13 @@ textarea:focus {
 .cover-center {
   -o-object-position: center;
   object-position: center; }
+
+.cover-right {
+  -o-object-position: right;
+  object-position: right; }
+
+.border-round {
+  border-radius: 100%; }
 
 .border-right {
   border-right: 2px solid #193e4a; }
@@ -425,11 +454,26 @@ textarea:focus {
 .padding-right-x-small {
   padding-right: 5px; }
 
+.fixed {
+  position: fixed; }
+
 .relative {
   position: relative; }
 
 .absolute {
   position: absolute; }
+
+.top-0 {
+  top: 0; }
+
+.left-0 {
+  left: 0; }
+
+.right-0 {
+  right: 0; }
+
+.bottom-0 {
+  bottom: 0; }
 
 @media only screen and (max-width: 980px) {
   .show-mobile-small {
@@ -452,35 +496,41 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   color: #193e4a;
   background-color: #f2f2f2;
-  font-size: 14px;
-  line-height: 1em; }
-
-.font-handwriting {
-  font-family: timberline, sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-size: 20px;
+  line-height: 1.4em; }
 
 p,
 h1,
-h2 {
-  margin: 0; }
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.1em; }
 
 h2 {
-  line-height: 1em;
-  font-size: 30px;
-  margin-bottom: 5px; }
+  font-size: 1.5rem;
+  line-height: 1.1em; }
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.1em; }
 
 p {
-  line-height: 1.3em;
-  font-size: 20px;
   margin-bottom: 5px; }
-
-p:last-child {
-  margin-bottom: 0; }
+  p:last-child {
+    margin-bottom: 0; }
 
 a {
   text-decoration: none;
   color: #e54f66; }
+  a:hover {
+    text-decoration: underline; }
 
 .text-large {
   margin-left: -3px; }
@@ -488,9 +538,7 @@ a {
     color: #193e4a; }
 
 .hero {
-  min-height: calc(100vh + 2px);
-  background-image: url("images/hermando-at-work-1800.jpeg");
-  position: relative; }
+  background-image: url("images/hermando-at-work-1800.jpeg"); }
 
 .small-hero {
   background-color: #f0f0f0f0;
@@ -499,6 +547,13 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
+  border-bottom: 2px solid #193e4a;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fbf2edf0), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0)); }
+
+.small-hero-alt {
+  background-color: #f0f0f0f0;
+  padding: 27px 40px;
   border-bottom: 2px solid #193e4a;
   background: -webkit-gradient(linear, left bottom, left top, from(#fbf2edf0), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0)); }
@@ -514,8 +569,6 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  display: -webkit-box;
-  display: flex;
   z-index: 900; }
 
 .close-menu {
@@ -525,17 +578,7 @@ a {
   z-index: 1000; }
 
 .menu-wrapper {
-  padding: 20px 40px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  width: 100%; }
+  padding: 20px 40px; }
 
 .menu-item {
   margin-bottom: 20px;
@@ -566,6 +609,23 @@ a {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50vw;
+  background-color: #f2f2f2;
+  padding: 27px 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-left: 2px solid #193e4a;
+  line-height: 1em;
+  font-size: 30px;
+  display: none; }
+
 .box {
   display: -webkit-box;
   display: flex;
@@ -591,49 +651,6 @@ a {
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover; }
-
-.footer {
-  padding: 27px 40px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-align: center;
-  align-items: center;
-  border-top: 2px solid #193e4a;
-  -webkit-box-pack: justify;
-  justify-content: space-between; }
-
-.menu-overlay {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50vw;
-  background-color: #f2f2f2;
-  background-color: #ffffffe0;
-  padding: 27px 40px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  border-left: 2px solid #193e4a;
-  line-height: 1em;
-  font-size: 30px;
-  display: none; }
-
-.post-wrapper {
-  padding: 180px 40px 40px 40px; }
-  .post-wrapper h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    line-height: 1.2em; }
-  .post-wrapper h3 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2em; }
 
 /*!
  * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
