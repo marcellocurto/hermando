@@ -5078,9 +5078,9 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
-html,
-body {
-  font-size: 1rem; }
-
-.menu-overlay {
-  left: 0; }
+@media only screen and (max-width: 980px) {
+  html,
+  body {
+    font-size: 1rem; }
+  .menu-overlay {
+    left: 0; } }
