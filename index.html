@@ -17,26 +17,34 @@
 
     <!-- Menu -->
     <header>
-        <nav class="main-navigation flex fixed">
-            <div class="menu-wrapper flex row items-space items-center width-100">
-                <div class="font-size-large">
-                    <span class="font-weight-bold">Herman</span>
-                    <span class="font-handwriting color-accent" style="margin-left:-20px;">Do</span>
-                </div>
-                <div id="hamburgerSymbol" class="hamburger-menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
+        <nav
+            class="flex fixed padding-left-x-large padding-right-x-large padding-top-medium padding-bottom-medium top-0 left-0 right-0 items-space items-center z-index-high">
+            <div class="font-size-large">
+                <span class="font-weight-bold">Herman</span>
+                <span class="font-handwriting color-accent" style="margin-left:-20px;">Do</span>
+            </div>
+            <div id="hamburgerSymbol" class="cursor hover-accent font-size-medium" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
     <!-- Menu Overlay -->
-    <div class="menu-overlay" id="AccessibleNavOverlay" role="navigation">
-        <div class="menu-item" onclick="closeMenu()"><a href="#unsere-leistungen">Unsere Leistungen</a></div>
-        <div class="menu-item" onclick="closeMenu()"><a href="#zielgruppen">Zielgruppen</a></div>
-        <div class="menu-item" onclick="closeMenu()"><a href="#kontakt">Kontakt</a></div>
-        <div class="menu-item" onclick="closeMenu()"><a href="impressum">Impressum</a></div>
-        <div class="close-menu" onclick="closeMenu()">
+    <div class="menu-overlay fixed z-index-high padding-x-large column font-size-medium" id="AccessibleNavOverlay" role="navigation">
+        <div class="margin-bottom-medium" onclick="closeMenu()">
+            <a href="#unsere-leistungen">Unsere Leistungen</a>
+        </div>
+        <div class="margin-bottom-medium" onclick="closeMenu()">
+            <a href="#zielgruppen">Zielgruppen</a>
+        </div>
+        <div class="margin-bottom-medium" onclick="closeMenu()">
+            <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="margin-bottom-medium" onclick="closeMenu()">
+            <a href="impressum">Impressum</a>
+        </div>
+        <div class="fixed padding-top-medium padding-right-x-large top-0 right-0 z-index-higher cursor hover-accent"
+            onclick="closeMenu()">
             <i class="far fa-times-circle"></i>
         </div>
     </div>
@@ -73,26 +81,7 @@
                 class="flex border-bottom-large border-top-small window-height-max cover mirror">
         </section>
 
-        <!-- Slogan -->
-        <!-- <section class="flex column padding-x-large border-bottom-large">
-            <h1 class="margin-bottom-large">
-                If it needs to get done,
-                <span class="font-handwriting color-accent">Herman does it!</span>
-            </h1>
-        </section> -->
-
-
         <!-- Unsere Leistungen -->
-
-        <!-- Section Bild -->
-        <!-- <img srcset="images/hermando-fenster-320.jpeg 320w,
-            images/hermando-fenster-480.jpeg 480w,
-            images/hermando-fenster-800.jpeg 800w,
-            images/hermando-fenster-1200.jpeg 1200w,
-            images/hermando-fenster-1800.jpeg 1800w" src="images/hermando-fenster-800.jpeg"
-            alt="Hermando macht die Fenster wieder dicht"
-            class="flex height-fixed-large cover cover-center border-top-small border-bottom-large"
-            id="unsere-leistungen"> -->
 
         <!-- Section -->
         <section class="flex column padding-x-large max-width margin-center" id="unsere-leistungen">
@@ -182,7 +171,8 @@
                     welche
                     bisher nur über verschiedene Dienstleister / Handwerker abgearbeitet werden?
                 </p>
-                <p>Wir sind ein zuverlässiger Partner wenn es darum geht nur noch einen Ansprechpartner zu haben um Ihr Probleme zu lösen.
+                <p>Wir sind ein zuverlässiger Partner wenn es darum geht nur noch einen Ansprechpartner zu haben um Ihr
+                    Probleme zu lösen.
                 </p>
             </div>
 

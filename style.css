@@ -256,6 +256,9 @@ textarea:focus {
 .color-accent {
   color: #e54f66; }
 
+.hover-accent:hover {
+  color: #e54f66; }
+
 .color-white {
   color: #f2f2f2; }
 
@@ -482,6 +485,12 @@ textarea:focus {
 .bottom-0 {
   bottom: 0; }
 
+.z-index-higher {
+  z-index: 1000; }
+
+.z-index-high {
+  z-index: 999; }
+
 @media only screen and (max-width: 780px) {
   .show-mobile-small {
     display: inherit; }
@@ -545,74 +554,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.text-large {
-  margin-left: -3px; }
-  .text-large a {
-    color: #193e4a; }
-
-.hero {
-  background-image: url("images/hermando-at-work-1800.jpeg"); }
-
-.small-hero {
-  background-color: #f0f0f0f0;
-  padding: 27px 40px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 2px solid #193e4a;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbf2edf0), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0)); }
-
-.small-hero-alt {
-  background-color: #f0f0f0f0;
-  padding: 27px 40px;
-  border-bottom: 2px solid #193e4a;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbf2edf0), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to top, #fbf2edf0, rgba(255, 255, 255, 0)); }
-
-.slogan {
-  font-size: 30px;
-  line-height: 1em;
-  text-align: center;
-  color: #193e4a; }
-
-.main-navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900; }
-
-.close-menu {
-  position: fixed;
-  top: 27px;
-  right: 40px;
-  z-index: 1000; }
-
-.menu-wrapper {
-  padding: 20px 40px; }
-
-.menu-item {
-  margin-bottom: 20px;
-  font-weight: 700; }
-
-.herman-logo {
-  font-weight: 700; }
-
-.do-logo {
-  color: #e54f66;
-  margin-left: -20px; }
-
-.text-large {
-  font-size: 40px;
-  line-height: 1.2em; }
-
-.hamburger-menu,
-.close-menu {
-  font-size: 24px;
-  cursor: pointer; }
-
 .hamburger-menu:hover,
 .close-menu:hover {
   color: #e54f66; }
@@ -623,20 +564,12 @@ a {
   background-size: cover; }
 
 .menu-overlay {
-  position: fixed;
-  z-index: 999;
   top: 0;
   right: 0;
   bottom: 0;
   left: 50vw;
   background-color: #f2f2f2;
-  padding: 27px 40px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
   border-left: 2px solid #193e4a;
-  line-height: 1em;
-  font-size: 30px;
   display: none; }
 
 .box {

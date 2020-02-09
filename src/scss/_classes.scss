@@ -193,6 +193,12 @@
   color: $color-accent;
 }
 
+.hover-accent {
+  &:hover {
+    color: $color-accent;
+  }
+}
+
 .color-white {
   color: $white;
 }
@@ -450,6 +456,14 @@
 }
 .bottom-0 {
   bottom: 0;
+}
+
+.z-index-higher {
+  z-index: 1000;
+}
+
+.z-index-high {
+  z-index: 999;
 }
 
 // Mobile
