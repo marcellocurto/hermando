@@ -5028,7 +5028,9 @@ readers do not read off random characters that represent icons */
   body {
     font-size: 1rem; }
   .border-round {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto; }
   .menu-overlay {
     left: 0; }
   h1 {
