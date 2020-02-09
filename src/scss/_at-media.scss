@@ -1,10 +1,18 @@
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
 html,
 body {
   font-size: 1rem;
 }
 
+.border-round {
+  margin-bottom: 40px;
+}
+
 .menu-overlay {
     left: 0;
+}
+
+h1 {
+  font-size: 1.6rem;
 }
 }

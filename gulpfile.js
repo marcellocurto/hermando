@@ -42,26 +42,14 @@ function javascript(cb) {
   cb();
 };
 
-function images(cb) {
-  gulp.src('AdobeStock_139564435_Preview.jpeg')
-    .pipe(imageResize({
-      width : 100,
-      height : 100,
-      crop : true,
-      upscale : false
-    }))
-    .pipe(gulp.dest(dist));
-  cb();
-};
-
 gulp.task("img", () => {
   const sizes = [
-    { width: 320, quality: 78, suffix: "small" },
-    { width: 480, quality: 78, suffix: "medium" },
-    { width: 800, quality: 78, suffix: "large" },
-    { width: 1200, quality: 78, suffix: "x-large" },
-    { width: 1800, quality: 78, suffix: "xx-large" },
-    { width: 2400, quality: 78, suffix: "xxx-large" }
+    { width: 320, quality: 84, suffix: "small" },
+    { width: 480, quality: 84, suffix: "medium" },
+    { width: 800, quality: 84, suffix: "large" },
+    { width: 1200, quality: 84, suffix: "x-large" },
+    { width: 1800, quality: 84, suffix: "xx-large" },
+    { width: 2400, quality: 84, suffix: "xxx-large" }
   ]
   let stream
   sizes.forEach(size => {
@@ -99,8 +87,7 @@ function watch(cb) {
 
 exports.css = css;
 exports.javascript = javascript;
-exports.images = images;
 exports.watch = watch;
 
-let build = gulp.parallel([watch, css, javascript, images]);
+let build = gulp.parallel([watch, css, javascript]);
 gulp.task('default', build);

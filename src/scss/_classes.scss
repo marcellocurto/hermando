@@ -483,9 +483,33 @@
   .padding-x-large {
     padding: 40px;
   }
+
+  .margin-top-x-large {
+    margin-top: 40px;
+  }
+
+  .margin-bottom-x-large {
+    margin-bottom: 40px;
+  }
+
+  .padding-left-large {
+    padding-left: 0;
+  }
+
+  .padding-right-x-large {
+    padding-right: 40px;
+  }
+
+  .padding-left-x-large {
+    padding-left: 40px;
+  }
+
+  .text-center-mobile {
+    text-align: center;
+  }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 780px) {
   .show-mobile-small {
     display: none;
   }
